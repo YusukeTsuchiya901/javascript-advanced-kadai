@@ -100,12 +100,11 @@ const gameOver = id => {
   untypedfield.textContent = 'タイムアップ！';
   setTimeout(() => {
     const result = confirm(rankCheck(score));
-  },10)
-
-  // OKボタンをクリックされたらリロードする
-  if(result == true) {
-    window.location.reload();
-  }
+    // OKボタンをクリックされたらリロードする
+    if(result == true) {
+      window.location.reload();
+    }
+  },60)
 };
 
 // カウントダウンタイマー
